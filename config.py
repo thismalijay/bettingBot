@@ -9,10 +9,16 @@ KELLY_FRACTION: float = float(os.getenv("KELLY_FRACTION", "0.5"))  # Demi-Kelly 
 MIN_EDGE: float = float(os.getenv("MIN_EDGE", "0.03"))             # Edge minimum 3%
 
 SPORTS: list[str] = [
-    "soccer_france_ligue1",
-    "soccer_england_premier_league",
-    "soccer_spain_la_liga",
-    "soccer_uefa_champs_league",
+    # Football — sports actifs en juin 2026
+    "soccer_fifa_world_cup",              # Coupe du Monde 2026 (en cours !)
+    "soccer_conmebol_copa_libertadores",  # Copa Libertadores
+    "soccer_conmebol_copa_sudamericana",  # Copa Sudamericana
+    "soccer_norway_eliteserien",          # Eliteserien Norvège
+    "soccer_sweden_allsvenskan",          # Allsvenskan Suède
+    # Basket
+    "basketball_nba",
+    # Tennis
+    "tennis_wta_queens_club_champ",
 ]
 
 REGIONS: str = "eu"

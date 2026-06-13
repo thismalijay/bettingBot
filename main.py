@@ -1,4 +1,9 @@
 import asyncio
+import sys
+
+# Force UTF-8 pour les noms d'équipes avec accents / caractères spéciaux
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 from rich import box
 from rich.console import Console
